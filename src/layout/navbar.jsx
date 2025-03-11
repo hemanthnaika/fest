@@ -20,15 +20,15 @@ export function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full flex items-center justify-between py-4 px-8 bg-black text-white z-50">
       {/* Fest Name & Logo (Left Side) */}
-      <div className="text-yellow-500 text-3xl font-extrabold">EXCEL 4.0</div>
+      <div className="text-yellow-500 text-3xl font-extrabold roboto  font-bold">EXCEL 4.0</div>
 
       {/* Right Side Links */}
-      <div className="flex items-center space-x-6">
-        <a href="#home" className="p-2 hover">Home</a>
-        <a href="#events" className="p-2">Events</a>
-        <a href="#team" className="p-2">Team</a>
-        <a href="#contact" className="p-2">Contact</a>
-        <a href="#about" className="p-2">About Us</a>
+      <div className="md:flex items-center space-x-6 hidden">
+        <a href="#home" className="p-2 roboto  font-bold">Home</a>
+        <a href="#events" className="p-2 roboto  font-bold">Events</a>
+        <a href="#team" className="p-2 roboto  font-bold">Team</a>
+        <a href="#contact" className="p-2 roboto  font-bold">Contact</a>
+        <a href="#about" className="p-2 roboto  font-bold">About Us</a>
       </div>
 
       {/* Music Control */}
@@ -73,11 +73,11 @@ export function Navbar() {
           exit={{ opacity: 0, x: "-100%" }}
           className="absolute top-0 left-0 w-full h-screen bg-black text-white flex flex-col items-center justify-center space-y-6 text-2xl"
         >
-          <a href="#home" className="hover:text-yellow-500" onClick={() => setIsOpen(false)}>Home</a>
-          <a href="#events" className="hover:text-yellow-500" onClick={() => setIsOpen(false)}>Events</a>
-          <a href="#team" className="hover:text-yellow-500" onClick={() => setIsOpen(false)}>Team</a>
-          <a href="#contact" className="hover:text-yellow-500" onClick={() => setIsOpen(false)}>Contact</a>
-          <a href="#about" className="hover:text-yellow-500" onClick={() => setIsOpen(false)}>About Us</a>
+          <a href="#home" className="hover:text-yellow-500 roboto  font-bold" onClick={() => setIsOpen(false)}>Home</a>
+          <a href="#events" className="hover:text-yellow-500 roboto  font-bold" onClick={() => setIsOpen(false)}>Events</a>
+          <a href="#team" className="hover:text-yellow-500 roboto  font-bold" onClick={() => setIsOpen(false)}>Team</a>
+          <a href="#contact" className="hover:text-yellow-500 roboto  font-bold" onClick={() => setIsOpen(false)}>Contact</a>
+          <a href="#about" className="hover:text-yellow-500 roboto  font-bold" onClick={() => setIsOpen(false)}>About Us</a>
         </motion.div>
       )}
 
